@@ -9,7 +9,15 @@ body {
 
 .top-header ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.top-header li {
+  background-color:#ddd;
+  padding: 2.5px 2.5px;
+  border: 1px dotted black;
+  border-radius: 5px;
 }
 
 .dropdown-content {
@@ -36,7 +44,9 @@ body {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .drop-li {
+  background-color:aliceblue;
+}
 
 .first-section {
   display: grid;

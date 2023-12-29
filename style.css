@@ -4,13 +4,23 @@ body {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-li {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+a {
+  text-decoration: none;
 }
 
 p {
+  padding:10px 10px;
+}
+
+li {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+div {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  margin: 20px 20px;
 }
 
 h1, h2, h3 {
@@ -36,12 +46,9 @@ h1, h2, h3 {
 }
 
 .top-header li {
-  background-color:azure;
   padding: 2.5px 2.5px;
-  border: 1px dotted black;
-  border-radius: 5px;
   list-style-type: none;
-  
+  border-top: 1px solid blue;
 }
 
 .dropdown-content {
@@ -67,7 +74,7 @@ h1, h2, h3 {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .top-header li.drop-li:hover {
-  background-color: aliceblue;
+  border-top: 1px solid red;
 }
 
 /* Change color of dropdown links on hover */
@@ -90,7 +97,7 @@ li {
   height: 300px; /* Allow the height to adjust based on content */
 }
 
-.first-section p {
+.first-section div {
   margin: 20px 20px;
   text-align: center;
   display: flex;
@@ -107,7 +114,7 @@ li {
   height: 300px;
 }
 
-.second-section p, .third-section p, .fourth-section p {
+.second-section div, .third-section div, .fourth-section div {
   display: flex;
   flex-direction: column;
   text-align: center;

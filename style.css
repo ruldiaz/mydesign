@@ -1,6 +1,20 @@
 body {
   background-color:azure;
-  margin: 60px 10px;
+  margin: 90px 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  text-align: center;
 }
 
 .top-header {
@@ -10,7 +24,7 @@ body {
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color:#ddd;
   margin: 0;
 }
 
@@ -22,7 +36,7 @@ body {
 }
 
 .top-header li {
-  background-color:#ddd;
+  background-color:azure;
   padding: 2.5px 2.5px;
   border: 1px dotted black;
   border-radius: 5px;
@@ -33,9 +47,9 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: rgba(241, 241, 241, 0.9);
   z-index: 1;
 }
 

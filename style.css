@@ -210,6 +210,42 @@ li {
   margin-top: 0px;
 }
 
+.logos-section div {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  color: black;
+  margin-bottom: 100px;
+}
+
+.logos-section p {
+  color: black;
+  font-weight: 600;
+  padding-bottom: 0;
+}
+
+.logos-section p:nth-child(3) {
+  color: black;
+  font-size: small;
+  font-weight: 500;
+  padding-top: 0;
+}
+
+.gray-logo {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.gray-logo:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+
 footer {
   margin-top: auto;
   background-color: #f1f1f1;

@@ -1,3 +1,5 @@
+
+
 console.log("Hello World!");
 
 function getDate(){
@@ -9,3 +11,27 @@ function getDate(){
 const todaysDate = document.querySelector(".date");
 console.log(todaysDate);
 todaysDate.insertAdjacentText("beforeend", getDate());
+
+const dataButton = document.querySelector(".data-btn");
+console.log(dataButton);
+
+
+
+// Asynchronous function to fetch data from data.json
+async function fetchData() {
+   try {
+     const response = await fetch('data.json');
+     const jsonData = await response.json();
+     
+     // Use jsonData as needed
+     console.log(jsonData);
+ 
+     // For example, display the info property in the console
+     console.log(jsonData.info);
+   } catch (error) {
+     console.error('Error fetching data:', error);
+   }
+ }
+ 
+ // Attach the fetchData function to the button click event
+ dataButton.addEventListener("click", fetchData);

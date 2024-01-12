@@ -13,6 +13,7 @@ console.log(todaysDate);
 todaysDate.insertAdjacentText("beforeend", getDate());
 
 const dataButton = document.querySelector(".data-btn");
+const dataShow = document.querySelector(".data");
 console.log(dataButton);
 
 
@@ -25,7 +26,7 @@ async function fetchData() {
      
      // Use jsonData as needed
      console.log(jsonData);
- 
+      dataShow.textContent = JSON.stringify(jsonData, null, 2);
      // For example, display the info property in the console
      console.log(jsonData.info);
    } catch (error) {
